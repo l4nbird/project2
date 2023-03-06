@@ -1,2 +1,2 @@
 # project2
-mandatory readme
+I ended up using the code you gave us.
