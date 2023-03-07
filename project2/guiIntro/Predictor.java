@@ -48,7 +48,7 @@ public class Predictor {
 		try {
 			fw = new FileWriter(fn);
 			BufferedWriter myOutFile = new BufferedWriter(fw);
-			myOutFile.write(this.toString());
+			myOutFile.write(this.simpleString());
 			myOutFile.flush();
 			myOutFile.close();
 		} catch (IOException e) {
@@ -154,5 +154,13 @@ public class Predictor {
 		}
 		return toReturn;
 	}
+	public String simpleString() {
+		String toReturn = "";
+		for (Instance instance : instances) {
+			toReturn += instance + "\n";
+		}
+		return toReturn;
+	}
+	
 }
 

@@ -192,6 +192,7 @@ public class PushCounterPanel extends JPanel{
 				//System.out.println(updatingInstance.toString());
 				responseField.setText("Activity added!");
 				myData.setText(predict.toString());
+				predict.saveFile();
 			}
 		});
 		addWAct.setBounds(472, 363, 192, 23);
@@ -218,6 +219,7 @@ public class PushCounterPanel extends JPanel{
 						System.out.println("removed: Index " + x);
 						myData.setText(predict.toString());
 						responseField.setText("Instance Removed!");
+						predict.saveFile();
 					}
 					
 				} catch(Exception err) {
